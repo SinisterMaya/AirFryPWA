@@ -1,0 +1,59 @@
+﻿@page "/"
+@using System.Collections.ObjectModel
+@using MudBlazor;
+@inject ISnackbar Snackbar
+
+
+<MudStack Justify="Justify.Center" AlignItems="AlignItems.Center" Class="pa-2 d-flex flex-grow-1 gap-1" Style="height: 100%; width:100%">
+
+    <MudText Typo="Typo.h6">Température du four (°F)</MudText>
+    <MudNumericField T="int" Value="@OvenTemp" ValueChanged="OvenTempChanged" Step="1"/>
+
+    <MudText Typo="Typo.h6">Temps de cuisson du four (min)</MudText>
+    <MudNumericField T="int" Value="@OvenTime" ValueChanged="OvenTimeChanged" Step="1" />
+
+    <MudText Typo="Typo.h6">Température Air Fryer (°F)</MudText>
+    <MudNumericField T="int" @bind-Value="AirFryerTemp" ReadOnly="true" HideSpinButtons="true" />
+
+    <MudText Typo="Typo.h6">Temps de cuisson du four (min)</MudText>
+    <MudNumericField T="int" @bind-Value="AirFryerTime" ReadOnly="true" HideSpinButtons="true"/>
+
+</MudStack>
+
+
+<MudOverlay Visible="IsLoading" DarkBackground="true" Absolute="true">
+    <MudProgressCircular Color="Color.Secondary" Indeterminate="true" />
+</MudOverlay>
+
+
+@code {
+    private bool IsLoading;
+
+    private int OvenTemp = 350;
+    private int AirFryerTemp = 325;
+
+    private int OvenTime = 20;
+    private int AirFryerTime = 16;
+
+    private void OvenTempChanged(int value)
+    {
+        OvenTemp = value;
+        UpdateAirFryerValues();
+    }
+
+    private void OvenTimeChanged(int value)
+    {
+        OvenTime = value;
+        UpdateAirFryerValues();
+    }
+
+    private void UpdateAirFryerValues()
+    {
+        if(OvenTemp != 0 && OvenTime != 0){
+            AirFryerTemp = OvenTemp - 25;
+            AirFryerTime = (int)(OvenTime * 0.8);
+        }
+    }
+
+
+}

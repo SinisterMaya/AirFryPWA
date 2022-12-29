@@ -1,0 +1,29 @@
+﻿@inherits LayoutComponentBase
+@using MudBlazor
+
+<PageTitle>Air Fryer Calculator</PageTitle>
+
+<MudLayout Class="layout-class">
+    <MudAppBar Elevation="1">
+        <MudSpacer />
+        <MudSwitch @bind-Checked="@_isDarkMode" Color="Color.Primary" Class="ma-4" T="bool" Label="Light/Dark" />
+        <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Color="Color.Inherit" Link="https://github.com/MudBlazor/MudBlazor" Target="_blank" />
+    </MudAppBar>
+
+    <MudMainContent Style="display: flex; flex-direction:column; height:100%;">
+        @Body
+    </MudMainContent>
+</MudLayout>
+
+<MudThemeProvider @bind-IsDarkMode="@_isDarkMode" Theme="_theme" DefaultScrollbar="false" />
+<MudDialogProvider />
+<MudSnackbarProvider />
+@*<main>
+    @Body
+</main>
+*@
+
+@code{
+    private MudTheme _theme = new();
+    private bool _isDarkMode;
+}

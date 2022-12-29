@@ -7,7 +7,7 @@
     <MudAppBar Elevation="1">
         <MudSpacer />
         <MudSwitch @bind-Checked="@_isDarkMode" Color="Color.Primary" Class="ma-4" T="bool" Label="Light/Dark" />
-        <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Color="Color.Inherit" Link="https://github.com/MudBlazor/MudBlazor" Target="_blank" />
+        <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Color="Color.Inherit" Link="https://github.com/SinisterMaya/AirFryPWA" Target="_blank" />
     </MudAppBar>
 
     <MudMainContent Style="display: flex; flex-direction:column; height:100%;">
@@ -18,10 +18,6 @@
 <MudThemeProvider @bind-IsDarkMode="@_isDarkMode" Theme="_theme" DefaultScrollbar="false" />
 <MudDialogProvider />
 <MudSnackbarProvider />
-@*<main>
-    @Body
-</main>
-*@
 
 @code{
     private MudTheme _theme = new();

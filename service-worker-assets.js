@@ -9,12 +9,16 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-wUvBaEmYijGn+jk5keUM8+eSWjyHxk26jYwg4jOodts=",
+      "hash": "sha256-q3H\/6johoq5IFmyhZkusNmOkpZnbxTyOGTU6CQGPZpY=",
       "url": "index.html"
     },
     {
-      "hash": "sha256-btWaA2IRgPAJuhn81G6j59ILlc+LFUzwgmXv8BHoIaU=",
+      "hash": "sha256-1dgTuqi2WOxv1cAzGqR2iOqqRp9KGN0PfWxMxejw\/\/8=",
       "url": "manifest.json"
+    },
+    {
+      "hash": "sha256-PSZ+8NsDBLCPw4dq2cUAziOFo91BB6Kf0SBwwWz491Y=",
+      "url": "MayaIcon.png"
     },
     {
       "hash": "sha256-E4vRnTlQ5zkYHO9QZLKJkuszF\/6HSvAgL++AmlY2WSw=",
@@ -41,11 +45,11 @@
       "url": "_framework\/icudt.dat.br"
     },
     {
-      "hash": "sha256-cO9Up8t5xZTlx87mk+\/di7qEYygG2BfEJWN+4Tdm84w=",
+      "hash": "sha256-PTxVNjj0sXt3Iy2JObzmoOoSuEw+YoMMoJV38frPnZk=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
-      "hash": "sha256-qd4RrjUgcfv9f1ykEii156aGZqU40bfJ9fohGf7y5kA=",
+      "hash": "sha256-3AumbEb1kcnXy51II3z6u6yro5UpyDL3xmTwbwjsIJM=",
       "url": "_framework\/AirFryPWA.dll.br"
     },
     {
@@ -217,5 +221,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "upG7u4NO"
+  "version": "UPNZE+6o"
 };

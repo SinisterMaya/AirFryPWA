@@ -7,7 +7,7 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "AirFryPWA.dll": "sha256-u3YBzuiv\/jxYtB9bnQxDuhc+Nxu3BdCCHFFWkQb7P2o=",
+      "AirFryPWA.dll": "sha256-Ehk\/klvQedXZQCo2jEhIGQ8pIXAmJXTYVfc4+b9mNXY=",
       "Microsoft.AspNetCore.Components.dll": "sha256-\/lABR5NRTAJJvWWqhbqLruJN6uwTOztp4iiZEmeZO9M=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-mMAvME0N3JYHVEVcs\/l3o685lcq\/fJC6xr3mJ3iNAGY=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-88tK+NIP9YCmS7RuIBJkq8OTWhsZsbIChiHrP8u6gYE=",
